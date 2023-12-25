@@ -6,6 +6,12 @@ A Clone of MIT Scratch Tool
 
 Live Demo : [Scratch Clone](https://scratch-clone.vercel.app/)
 
+Video Recording : 
+
+https://github.com/rehanmohiuddin1623/scratch-clone/assets/142250125/a95b53fb-4a14-4383-b31f-528135a86c34
+
+
+
 Features : 
 
 * Drag And Drop Motion
