@@ -1,0 +1,28 @@
+
+.block-view{
+    position: relative;
+    z-index: 1;
+}
+.block-view .lower {
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 1.2em;
+    left: 0.8em;
+    -webkit-border-radius: 4em;
+    -moz-border-radius: 4em;
+    border-radius: 4em;
+    z-index: -1;
+}
+
+.block-view .upper {
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    bottom: 1em;
+    left: 0.8em;
+    border-radius: 4em;
+    z-index: 1;
+    background-color: white;
+    margin-bottom: 4px;
+}

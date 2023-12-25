@@ -1,16 +1,30 @@
 import React from "react";
+import Dialog from "./Dialog";
 
-export default function CatSprite() {
+export default function CatSprite({ sprite = { speed: 0, angle: 0, x: 0, y: 0, glide: 0.5 }, text = "" }) {
+
+
+  const { x, y } = sprite
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="95.17898101806641"
+      width="170.17898101806641"
       height="100.04156036376953"
       viewBox="0.3210171699523926 0.3000000357627869 95.17898101806641 100.04156036376953"
       version="1.1"
       xmlSpace="preserve"
+      style={{
+        position: 'absolute',
+        left: `${x}px`,
+        top: `${y}px`,
+        transition: `left ${sprite.glide}s ease-in-out, top ${sprite.glide}s ease-in-out`,
+        zIndex: 10,
+        rotate: `${sprite.angle - 90}deg`
+      }}
+      className="z-1"
     >
       <g>
+        {text.length && <Dialog text={text} />}
         <g id="Page-1" stroke="none" fillRule="evenodd">
           <g id="costume1">
             <g id="costume1.1">
