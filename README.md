@@ -8,7 +8,9 @@ Live Demo : [Scratch Clone](https://scratch-clone.vercel.app/)
 
 Video Recording : 
 
-https://github.com/rehanmohiuddin1623/scratch-clone/assets/142250125/a95b53fb-4a14-4383-b31f-528135a86c34
+
+https://github.com/rehanmohiuddin1623/scratch-clone/assets/142250125/89a63c9c-8658-464e-ab1e-6eb1e412edc1
+
 
 
 
