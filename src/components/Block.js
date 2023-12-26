@@ -57,17 +57,9 @@ const Block = ({ id, initialPosition, onDrag, codeBlock, ind, onTextChange, trig
             onMouseUp={() => {
                 dragging.current = false
             }}
-            onClick={() => {
+            onClick={(e) => {
                 if (!dragging.current) {
-                    const actions = pieces.filter((item) => {
-                        return Math.abs(item.x - codeBlock.x) <= 50
-                    })
-                    if (actions.length) {
-                        triggerAction(actions)
-                    }
-                    else {
-                        triggerAction([codeBlock])
-                    }
+                    triggerAction(codeBlock, { x: e.clientX, y: e.clientY })
                 }
             }}
         >
